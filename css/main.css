@@ -1,10 +1,11 @@
 body { 
 	box-sizing: border-box;
 	color: #fff;
+	font-size: 16px;
 	font-family: 'Raleway', sans-serif;
 }
 
-.title-h2 { font-size: 2em; padding: 5px 0px; line-height: 1 }
+.title-h2 { font-size: 2em; padding: 5px 0px; line-height: 1.2; }
 .title-h3 {}
 .title-h4 {}
 .text-p { font-size: 1.2em; }
@@ -114,8 +115,34 @@ input[type="text"], .input-box {
 }
 
 .fa {
-	padding: 1em .3em;
+	padding: 0 .3em;
 }
+
+/* Modal Iniciar Sesion */
+.login-color {
+	background-color: #08ac9d; 
+	color: #fff;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.photo {
+	width: 7em;
+	height: auto;
+	display:block;
+	margin:auto;
+}
+
+.content {
+	width: 100%;
+}
+
+.content a {
+	color: #f7b617;
+}
+
 
 /* Padding */
 .padding-xs { padding: .25em; }
