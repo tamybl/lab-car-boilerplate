@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0">
-	<title>Lab-Car</title>
+	<title>LabCar</title>
 	<script src="https://use.fontawesome.com/aee39a9bf8.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -25,11 +25,28 @@
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="padding-y-lg"><a href="#">Viaja</a></li>
 	        <li class="padding-y-lg"><a href="#">Conduce</a></li>
-        	<li class="padding-y-lg"><a href="#">Iniciar Sesión</a></li>
+        	<li class="padding-y-lg"><a href="#" data-toggle="modal" data-target="#myModal">Iniciar Sesión</a></li>
       	</ul>
     	</div>
   	</div>
-	</nav>
+  	<!-- Modal Iniciar Sesión -->
+  	<div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        	<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        		<h4 class="modal-title"></h4>
+        	</div>
+        	<div class="modal-body">
+          	<p>This is a large modal.</p>
+        	</div>
+        	<div class="modal-footer">
+          	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        	</div>
+      	</div>
+    	</div>
+  	</div>
+			</nav>
 		<!-- Seccion 2 -->
 		<div class="container-fluid register">
 			<div class="row padding-x-xxl">
@@ -38,6 +55,11 @@
 				<h2 class="title-h2">Eres dueño de tu tiempo</h2>
 				<h4>Viaja con <img src="assets/images/logoBlanco.png" class="img-inline" alt=""></h4>
 				<button type="button" class="btn btn-default text-uppercase bold">Regístrate</button>
+
+				<!-- Modal Registrarse -->
+
+				<!-- Fin -->
+
 				<div class="row padding-y-xl">
 					<div class="hidden-xs col-md-4 border-bottom padding-x-sm"></div>
 					<div class="hidden-xs col-md-4 text-center"><p>O bien</p></div>
@@ -54,7 +76,7 @@
 		<!-- Seccion 3: Descarga APP -->
 		<div class="container-fluid default-color padding-top-xl padding-bottom-xl">
 			<div class="row">
-				<div class="col-md-10 col-xs-offset-1 col-xs-10 app-section">
+				<div class="col-md-10 col-md-pull-1 col-xs-offset-1 col-xs-10 app-section">
 					<div class="row padding-md padding-left-xl">
 						<div class="col-md-6">
 							<img src="assets/images/iPhone6Plus.png" class="img-responsive" alt="">
@@ -114,7 +136,7 @@
 		</div>
 
 		<!-- Footer Section -->
-		<div class="container-fluid padding-x-xl footer">
+		<div class="container padding-top-xl footer">
 			<!-- Footer Title -->
 			<div class="row">
 				<div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 border-bottom padding-x-sm">
@@ -162,7 +184,7 @@
 			</div>
 			<!-- Footer Copyrigth -->
 			<div class="row">
-				<div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">© 2017 LabCar technologies</div>
+				<div class="padding-x-lg border-top col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">© 2017 LabCar technologies</div>
 			</div>
 		</div> 
 	
