@@ -96,11 +96,9 @@ input[type="text"], .input-box {
 	outline: none;
 }
 
-.padding-form {
-	padding: 4em 1em 4em 10em;
-}
 
-.classlist li {
+.classlist li, .classlist ul {
+	margin: 0;
 	padding: 0.5em 0;
 	list-style-type: none;
 }
@@ -159,6 +157,12 @@ input[type="text"], .input-box {
 	background-color: #08ac9d;
 	border: 1px solid #0B9F91;
 	color: #fff;
+}
+
+.btn-send:hover {
+	background-color: #f7b617;
+	border: 1px solid #EBAB10;
+	color: #424242;
 }
 
 .register-form {

@@ -11,7 +11,7 @@
 </head>
 <body>
 	<!-- Menu Navegacion -->
-	<nav class="navbar navbar-default header">
+	<nav class="navbar navbar-default navbar-fixed-top header">
   	<div class="container-fluid padding-lg">
     	<div class="navbar-header">
       	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,46 +29,6 @@
 	      	</ul>
 	    	</div>
 	  	</div>
-	  	<!-- Modal Iniciar Sesión -->
-	  	<div class="modal fade" id="modalLogin" role="dialog">
-	    	<div class="modal-dialog modal-md">
-	      	<div class="modal-content login-color">
-	        	<div class="modal-header">
-	        		<button type="button" class="close" data-dismiss="modal">&times;</button>
-	        		<h4 class="modal-title align-center"><img src="assets/images/user-white.png" class="img-responsive photo" alt=""></h4>
-	        	</div>
-	        	<div class="modal-body">
-	        			<div class="content">	
-		          	<form class="form-horizontal row">
-					    		<div class="form-group">
-					      		<label class="control-label col-xs-offset-1 col-xs-2 col-md-offset-1 col-md-1"><i class="fa fa-user fa-lg" aria-hidden="true"></i></label>
-					      		<div class="col-xs-8 col-md-8">
-					        		<input type="email" class="form-control input-box" id="email" placeholder="Username" name="email">
-					      		</div>
-					    		</div>
-				    		<div class="form-group">
-				      		<label class="control-label col-xs-offset-1 col-xs-2 col-md-offset-1 col-md-1" for="pwd"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></label>
-				      		<div class="col-xs-8 col-md-8">          
-				        		<input type="password" class="form-control input-box" id="pwd" placeholder="Password" name="pwd">
-				      		</div>
-				    		</div>
-				    		<div class="form-group"> 
-					    		<div class="col-xs-offset-5 col-xs-5 col-md-offset-5 col-md-5">
-					      		<button type="submit" class="btn btn-default bold text-uppercase default-color">Loging</button>
-					    		</div>
-		  					</div>
-		  					<div class="form-group"> 
-					    		<div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
-					      		<p>Forgot your password? <a href="#">Click Here</a></p>
-					  			</div>
-		  					</div>
-		  				</form>
-	        	</div>							
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <!-- Fin Modal Iniciar Sesión -->
 	</nav>
 		<!-- Seccion 2 -->
 		<div class="container-fluid register">
@@ -79,61 +39,7 @@
 				<h4>Viaja con <img src="assets/images/logoBlanco.png" class="img-inline" alt=""></h4>
 				<button type="button" class="btn btn-default text-uppercase bold" data-toggle="modal" data-target="#modalRegister">Regístrate</button>
 
-				<!-- Modal Registrarse -->
-				<div class="modal fade" id="modalRegister" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content register-form">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"><button type="button" class="btn btn-default btn-newaccount bold">Ya tienes una cuenta?</button></h4>
-        </div>
-        <div class="modal-body">
-        	<!-- Formulario Registro -->
-          <form name="myform">
-					<div class="form-group">
-						<input id="myName" name="myName" class="form-control" type="text" placeholder="Nombre">
-					</div>
-					<div class="form-group">
-						<input id="lastname" name="lastname" class="form-control" type="text"  placeholder="Apellido">
-					</div>
-					<div class="form-group">
-						<input id="lastname" name="lastname" class="form-control" type="email" placeholder="Correo Electrónico: ejemplo@correo.com">
-					</div>
-					<div class="form-group">
-						<input type="text" id="phone" name="phone" class="form-control" placeholder="Teléfono">
-					</div>
-					<div class="form-group">
-						<input id="password" name="password" class="form-control" type="password"  placeholder="Contraseña (4 a 12 caracteres)">
-					</div>
-					<div class="form-group">
-						<input type="text" id="city" name="city" class="form-control" placeholder="Ciudad">
-					</div>
-					<div class="form-group">
-						<input type="text" id="code" name="code" class="form-control" placeholder="(Opcional) Código de invitación">
-					</div>
-					<div class="form-group">
-						<select name="howknowus" id="howknowus" class="form-control">
-							<option selected class="bold">Cómo te enteraste de nosotros?</option>
-							<option>Buscadores (Google, etc)</option>
-							<option>Redes Sociales (Facebook, Twitter, etc)</option>
-							<option>La Prensa (Diario, Tv, etc.)</option>
-							<option>Por un familiar/amigo</option>
-							<option>Otro</option>
-						</select>
-					</div>
-					
-					<button id="submit" type="submit" value="submit" class="btn btn-primary btn-send text-uppercase">Enviar</button>
-			
-				</form>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-				<!-- Fin Modal Registrarse-->
+
 
 				<div class="row padding-y-xl">
 					<div class="hidden-xs col-md-4 border-bottom padding-x-sm"></div>
@@ -142,7 +48,7 @@
 				</div>
 				<div class="row">
 					<div class="hidden-xs col-md-6">
-						<button type="button" class="btn btn-default bold">Conviertete en un conductor</button>
+						<button type="button" class="btn btn-default bold" data-toggle="modal" data-target="#modalDriver">Conviertete en un conductor</button>
 					</div>
 				</div>
 			</div>
@@ -172,7 +78,7 @@
 			<div class="col-xs-12 col-md-4 col-md-push-8 section-driver">
 				<h2 class="title-h2">Conduce cuando quieras</h2>
 				<h5>LabCar es una opción flexible para alcanzar tus metas financieras.</h5>
-				<button class="btn btn-default bold default-color">Conviertete en conductor</button>
+				<button class="btn btn-default bold default-color" data-toggle="modal" data-target="#modalDriver">Conviertete en conductor</button>
 			</div>
 			</div>
 		</div>
@@ -200,18 +106,17 @@
 			      <button type="submit" class="btn btn-default bold text-uppercase">¡Trazar Ruta!</button>
 			    </div>
   	</div>
-  
   </form>
-				</div>
+</div>
 			
-				<div class="col-xs-12 col-md-5">
-						<div class="map"><iframe class="padding-lg embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13320.972714503461!2d-70.64128417911377!3d-33.416903875393295!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512473987804" width="100%" height="100%" frameborder="0" style="border:1px solid #fff" allowfullscreen></iframe></div>
-				</div>
+			<div class="col-xs-12 col-md-5">
+				<div class="map"><iframe class="padding-lg embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13320.972714503461!2d-70.64128417911377!3d-33.416903875393295!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512473987804" width="100%" height="100%" frameborder="0" style="border:1px solid #fff" allowfullscreen></iframe></div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Footer Section -->
-		<div class="container padding-top-xl footer">
+	<!-- Footer Section -->
+	<div class="container padding-top-xl footer">
 			<!-- Footer Title -->
 			<div class="row">
 				<div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 border-bottom padding-x-sm">
@@ -261,8 +166,169 @@
 			<div class="row">
 				<div class="padding-x-lg border-top col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">© 2017 LabCar technologies</div>
 			</div>
-		</div> 
-	
+	</div> 
+	<!-- MODALES -->
+	<!-- Modal Iniciar Sesión -->
+	<div class="modal fade" id="modalLogin" role="dialog">
+		    	<div class="modal-dialog modal-md">
+		      	<div class="modal-content login-color">
+		        	<div class="modal-header">
+		        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		        		<h4 class="modal-title align-center"><img src="assets/images/user-white.png" class="img-responsive photo" alt=""></h4>
+		        	</div>
+		        	<div class="modal-body">
+		        		<div class="content">	
+			          	<form class="form-horizontal row">
+						    		<div class="form-group">
+						      		<label class="control-label col-xs-offset-1 col-xs-2 col-md-offset-1 col-md-1"><i class="fa fa-user fa-lg" aria-hidden="true"></i></label>
+						      		<div class="col-xs-8 col-md-8">
+						        		<input type="email" class="form-control input-box" id="email" placeholder="Username" name="email">
+						      		</div>
+						    		</div>
+					    		<div class="form-group">
+					      		<label class="control-label col-xs-offset-1 col-xs-2 col-md-offset-1 col-md-1" for="pwd"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></label>
+					      		<div class="col-xs-8 col-md-8">          
+					        		<input type="password" class="form-control input-box" id="pwd" placeholder="Password" name="pwd">
+					      		</div>
+					    		</div>
+					    		<div class="form-group"> 
+						    		<div class="col-xs-offset-5 col-xs-5 col-md-offset-5 col-md-5">
+						      		<button type="submit" class="btn btn-default bold text-uppercase default-color">Loging</button>
+						    		</div>
+			  					</div>
+			  					<div class="form-group"> 
+						    		<div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+						      		<p>Forgot your password? <a href="#">Click Here</a></p>
+							  			</div>
+				  					</div>
+				  				</form>
+			        	</div>							
+			        </div>
+			      </div>
+			    </div>
+	</div>
+	<!-- Fin Modal Iniciar Sesión -->
+	<!-- Modal Registrarse -->
+	<div class="modal fade" id="modalRegister" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content register-form">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title"><button type="button" class="btn btn-default btn-newaccount bold">Ya tienes una cuenta?</button></h4>
+	      </div>
+	      <div class="modal-body">
+	       	<!-- Formulario Registro -->
+	        <form>
+						<div class="form-group">
+							<input id="myName" name="myName" class="form-control" type="text" placeholder="Nombre">
+						</div>
+						<div class="form-group">
+							<input id="lastname" name="lastname" class="form-control" type="text"  placeholder="Apellido">
+						</div>
+						<div class="form-group">
+							<input id="lastname" name="lastname" class="form-control" type="email" placeholder="Correo Electrónico: ejemplo@correo.com">
+						</div>
+						<div class="form-group">
+							<input type="text" id="phone" name="phone" class="form-control" placeholder="Teléfono">
+						</div>
+						<div class="form-group">
+							<input id="password" name="password" class="form-control" type="password"  placeholder="Contraseña (4 a 12 caracteres)">
+						</div>
+						<div class="form-group">
+							<input type="text" id="city" name="city" class="form-control" placeholder="Ciudad">
+						</div>
+						<div class="form-group">
+							<input type="text" id="code" name="code" class="form-control" placeholder="(Opcional) Código de invitación">
+						</div>
+						<div class="form-group">
+							<select name="howknowus" id="howknowus" class="form-control">
+								<option selected class="bold">Cómo te enteraste de nosotros?</option>
+								<option>Buscadores (Google, etc)</option>
+								<option>Redes Sociales (Facebook, Twitter, etc)</option>
+								<option>La Prensa (Diario, Tv, etc.)</option>
+								<option>Por un familiar/amigo</option>
+								<option>Otro</option>
+							</select>
+						</div>
+						
+						<button id="submit" type="submit" value="submit" class="btn btn-primary btn-send text-uppercase">Enviar</button>
+				
+					</form>
+	        </div>
+	    </div>
+	    
+	  </div>
+	</div>
+	<!-- Fin Modal Registrarse-->
+	<!-- Modal Convertirse en Conductor -->
+	<div class="modal fade" id="modalDriver" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content register-form">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	       	<!-- Formulario Registro -->
+	        <form>
+						<div class="form-group">
+							<label for="question1" class="bold">¿Tienes vehículo 4 puertas?</label>
+							<select name="question1" id="question1" class="form-control">
+								<option selected class="bold">--</option>
+								<option>Sí</option>
+								<option>No</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question2" class="bold">Marca</label>
+							<select name="question2" id="question2" class="form-control">
+								<option selected class="bold">Elige la marca del Vehículo</option>
+								<option>Chevrolet</option>
+								<option>Toyota</option>
+								<option>Ford</option>
+								<option>Honda</option>
+								<option>Hyundai</option>
+								<option>Peugeot</option>
+							</select>
+							<p>¿No ves tu vehículo en la lista?. Envía un correo electrónico a <a href="mailto:someone@example.com?Subject=Otra%20marca" target="_top">sociosmdv@labcar.com</a></p>
+						</div>
+						<div class="form-group">
+							<label for="question3" class="bold">Año</label>
+							<select name="question3" id="question3" class="form-control">
+								<option selected class="bold">Elige un Modelo</option>
+								<option>Modelo 1</option>
+								<option>Modelo 2</option>
+								<option>Modelo 3</option>
+								<option>Modelo 4</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question4" class="bold">Modelo</label>
+							<select name="question4" id="question4" class="form-control">
+								<option selected class="bold">Elige el año</option>
+								<option>2017</option>
+								<option>2016</option>
+								<option>2015</option>
+								<option>2014</option>
+								<option>2013</option>
+								<option>2012</option>
+								<option>2011</option>
+								<option>2010</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="mark" class="bold">Número de Matrícula</label>
+							<input id="patente" name="patente" class="form-control" type="text"  placeholder="Número de Matrícula">
+						</div>
+						<button id="submit" type="submit" value="submit" class="btn btn-primary btn-send text-uppercase">Enviar</button>
+				
+					</form>
+	        </div>
+	    </div>
+	    
+	  </div>
+	</div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
