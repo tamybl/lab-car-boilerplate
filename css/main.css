@@ -143,6 +143,17 @@ input[type="text"], .input-box {
 	color: #f7b617;
 }
 
+.btn-newaccount {
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+}
+
+.btn-newaccount:hover {
+	background-color: #292929;
+	color: #fff;
+}
+
 
 /* Padding */
 .padding-xs { padding: .25em; }
