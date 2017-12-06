@@ -1,1 +1,9 @@
-@media screen (max-width: )
+@media screen (max-width: ) {
+	.padding-top-rrss {
+		padding-top: .5em;
+	}
+
+	.padding-top-appstore {
+		padding-top: .5em;
+	}
+}
