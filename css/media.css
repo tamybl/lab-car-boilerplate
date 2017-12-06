@@ -6,4 +6,8 @@
 	.padding-top-appstore {
 		padding-top: .5em;
 	}
+
+	.fa {
+		padding: 0 .1em;
+	}
 }

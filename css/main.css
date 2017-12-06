@@ -65,7 +65,13 @@ body {
 }
 
 .img-inline {
+	display: inline-block;
 	height: 1.2em;
+}
+
+.img-inline-xs {
+	display: inline-block;
+	height: .8em;
 }
 
 .bold {
@@ -92,10 +98,13 @@ body {
 	color: #fff;
 }
 
+.input-box input {
+color: #fff;
+}
+
 input[type="text"], .input-box {
 	outline: none;
 }
-
 
 .classlist li, .classlist ul {
 	margin: 0;
@@ -105,6 +114,11 @@ input[type="text"], .input-box {
 
 .classlist a {
 	color: #fff;
+}
+
+.classlist a:hover {
+	text-decoration: none;
+	color: #f7b617;
 }
 
 .map {
@@ -160,14 +174,18 @@ input[type="text"], .input-box {
 }
 
 .btn-send:hover {
-	background-color: #f7b617;
-	border: 1px solid #EBAB10;
-	color: #424242;
+	background-color: ##089E90;
+	border: 1px solid #089386;
+	color: #fff;
 }
 
 .register-form {
 	background-color: #E6E6E6;
 	color: #656565;
+}
+
+.register-form input, .login-color input {
+	color: #fff;
 }
 
 .padding-top-rrss {
@@ -176,6 +194,10 @@ input[type="text"], .input-box {
 
 .padding-top-appstore {
 	padding-top: 10em;
+}
+
+.margin-fix {
+	margin-right: 0px;
 }
 
 /* Padding */
