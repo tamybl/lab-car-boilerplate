@@ -170,6 +170,13 @@ input[type="text"], .input-box {
 	color: #656565;
 }
 
+.padding-top-rrss {
+	padding-top: 17em;
+	}
+
+.padding-top-appstore {
+	padding-top: 10em;
+}
 
 /* Padding */
 .padding-xs { padding: .25em; }
