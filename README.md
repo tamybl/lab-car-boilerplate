@@ -1,6 +1,3 @@
-# lab-car-boilerplate
-
-
 # Labcar
 Desarrollo de sitio "Labcar" en version responsive.
 
